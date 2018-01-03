@@ -1,0 +1,70 @@
+#sec-02 {
+  padding-top: 5.7rem;
+  background-image: url("img/sec-02/bg-lines.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sec-02__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  text-transform: uppercase;
+  color: $title-color;
+  text-align: center;
+  margin-bottom: .3rem;
+}
+
+.sec-02__subtitle {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: $title-color;
+  padding: 0 .9rem;
+}
+
+#sec-02 .row:first-child [class*=col-]:first-child {
+  margin-bottom: 2.3rem;
+}
+
+.sec-02__paragraph {
+  font-family: TinkovL;
+  padding: 0 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.sec-02__paragraph:last-child {
+  padding: 0 1rem;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+// GALLERY
+#sec-02 .row:first-child {
+  margin-bottom: 2.9rem;
+}
+
+.sec-02__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery__element {
+  flex-basis: 26%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:nth-child(-n + 3) {
+    margin-bottom: 1.8rem;
+  }
+}
+
+.gallery__logo {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #sec-02 .row:first-child [class*= col-] {
+    padding: 0;
+  }
+}
