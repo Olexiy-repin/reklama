@@ -1,0 +1,55 @@
+#sec-03 {
+  padding-top: 6rem;
+  padding-bottom: 0;
+  background-image: url(img/sec-03/bg-lines.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #28292d;
+}
+
+.sec-03__before-title-paragraph {
+  font-family: TinkovEB;
+  font-size: pxToRem(14px);
+  text-transform: uppercase;
+  color: #a38f6a;
+  text-align: center;
+  letter-spacing: .1rem;
+  margin-bottom: .8rem;
+}
+
+.sec-03__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#sec-03 .row [class*=col-]:first-child {
+  margin-bottom: 2.4rem;
+}
+
+.percent-container__percent-content {
+  background-image: url(img/sec-03/pattern.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 0 4rem;
+  margin-bottom: 1.6rem;
+  &:last-child {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.percent-container__item {
+  font-family: TinkovEB;
+  font-size: pxToRem(72px);
+  text-align: center;
+  margin-bottom: .6rem;
+}
+
+.percent-container__description {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  text-align: center;
+}
