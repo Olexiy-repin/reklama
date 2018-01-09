@@ -1,0 +1,93 @@
+#sec-07 {
+  padding-top: 5.7rem;
+  padding-bottom: 2rem;
+  background-image: url("img/sec-07/bg-lines.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sec-07 .indent {
+  display: block;
+  margin: .5rem 0;
+
+}
+
+#sec-07 .sec-07__first-row {
+  margin-bottom: 2.8rem;
+}
+
+#sec-07 .container-fluid > .row:last-child > [class*=col-]:first-child {
+  margin-bottom: 2.6rem;
+}
+
+#sec-07 .container-fluid > .row:last-child > [class*=col-]:last-child {
+  margin-top: 2.1rem;
+}
+
+.sec-07__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  color: #28292d;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .3rem;
+}
+
+.sec-07__paragraph {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+  text-align: center;
+}
+
+.sec-07__picture {
+  display: block;
+  height: 300px;
+  position: relative;
+}
+
+.sec-07__img {
+  position: absolute;
+  top: 0;
+  left: -4.5%;
+}
+
+.sec-07__subtitle {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+  margin-bottom: 1.1rem;
+}
+
+.sec-07__sub-paragraph {
+  font-family: TinkovL;
+  color: #28292d;
+  line-height: 1.5;
+}
+
+.sec-07__bottom-paragraph {
+  font-family: TinkovEB;
+  font-size: pxToRem(18px);
+
+}
+
+.color-gold {
+  color: #b39c72;
+}
+
+.bottom-row [class*=col-]:first-child {
+  margin-bottom: 2.2rem;
+}
+
+.sec-07__second-picture {
+  display: block;
+  position: relative;
+  height: 70px;
+}
+
+.sec-07__second-img {
+  position: absolute;
+  top: 0;
+  left: -19%;
+}

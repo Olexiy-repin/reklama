@@ -1,0 +1,151 @@
+#sec-06 {
+  padding-top: 5.6rem;
+  padding-bottom: 6.3rem;
+  background-color: #f7f7f7;
+}
+
+.first-section {
+  position: relative;
+}
+
+.sec-06__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  color: #28292d;
+  text-transform: uppercase;
+  margin-bottom: 18rem;
+}
+
+.sec-06__first-subtitle {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+  margin-bottom: 1.2rem;
+}
+
+.sec-06__first-paragraph {
+  font-family: TinkovL;
+  line-height: 1.5;
+}
+
+.sec-06__first-paragraph .indent {
+  display: block;
+  margin-bottom: .3rem;
+  &:last-child {
+    margin-bottom: .7rem;
+  }
+}
+
+.first-section__img {
+  position: absolute;
+  top: 26.4%;
+  left: 0;
+}
+
+.sec-06__picture {
+  display: block;
+}
+
+// SECOND SECTION
+.first-section {
+  margin-bottom: 5.9rem;
+}
+
+#sec-06 .row [class*=col-]:first-child {
+  margin-bottom: 2.3rem;
+}
+
+.sec-06__second-subtitle {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+  margin-bottom: 1rem;
+}
+
+.sec-06__second-paragraph {
+  font-family: TinkovL;
+  line-height: 1.5;
+  margin-bottom: .9rem;
+}
+
+.sec-06__after-p-text {
+  .bg-color {
+    display: block;
+    font-family: TinkovEB;
+    color: #28292d;
+    background-color: #b39c72;
+    padding: 0 .5rem;
+    &:last-child {
+      display: inline-block;
+      margin-top: .2rem;
+    }
+  }
+}
+
+// THIRD SECTION
+#sec-06 .row {
+  margin-bottom: 6.2rem;
+}
+
+.list__col {
+  margin-bottom: 1rem;
+  color: #28292d;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.list__col:last-child .list__item:last-child {
+  display: block;
+  margin-top: 2.2rem;
+  text-align: center;
+}
+
+.list__item {
+  display: flex;
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.list__item-content {
+  width: 89%;
+}
+
+.list__arrow {
+  width: 6px;
+  margin-right: 8%;
+  margin-top: .3rem;
+}
+
+.list__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  margin-bottom: .6rem;
+}
+
+.list__paragraph {
+  font-family: TinkovL;
+  line-height: 1.5;
+}
+
+.list__button-title {
+  font-family: TinkovEB;
+  font-size: pxToRem(30px);
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+  color: #28292d;
+}
+
+.list__button {
+  font-family: TinkovEB;
+  font-size: pxToRem(14px);
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .1rem;
+  padding: 1rem 2.1rem;
+  border: none;
+  background-color: #28292d;
+  cursor: pointer;
+}
