@@ -1,0 +1,44 @@
+#sec-08 {
+  padding-top: 1.3rem;
+  padding-bottom: 6rem;
+  background-image: url(img/sec-08/bg-lines.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.sec-08__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  text-align: center;
+  text-transform: uppercase;
+  color: #28292d;
+  margin-bottom: .2rem;
+}
+
+.sec-08__paragraph {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  text-align: center;
+  color: #28292d;
+}
+
+#sec-08 .row [class*=col-]:first-child {
+  margin-bottom: 1.8rem;
+}
+
+#sec-08 .row [class*=col-]:last-child {
+  margin-top: 2.1rem;
+}
+
+.sec-08__list {
+  list-style: none;
+  text-align: center;
+}
+
+.sec-08__list-item {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #b39c72;
+  line-height: 2;
+}
