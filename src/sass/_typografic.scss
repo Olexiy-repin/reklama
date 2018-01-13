@@ -11,3 +11,16 @@ $title-color: #28292d;
   src: url('fonts/Gilroy-Light.woff') format("woff"),
        url('fonts/Gilroy-Light.woff2') format("woff2");
 }
+
+.title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.subtitle {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+}

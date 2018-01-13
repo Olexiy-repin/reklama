@@ -1,0 +1,134 @@
+#sec-12 {
+  padding-top: 5.7rem;
+  padding-bottom: 6.4rem;
+  background-image: url("img/sec-12/bg-lines.png");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sec-12__title {
+  text-align: center;
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  text-transform: uppercase;
+  color: #28292d;
+  margin-bottom: .3rem;
+}
+
+.sec-12__subtitle {
+  text-align: center;
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+}
+
+// FORM
+#sec-12 .row [class*=col-]:first-child {
+  margin-bottom: 2.2rem;
+}
+
+.form-container {
+  box-shadow: 0 0 18px #ccc;
+}
+
+.sec-12__form {
+  padding: 4.4rem 1.5rem;
+  background-color: #fff;
+}
+
+.text-input {
+  font-family: TinkovL;
+  color: #28292d;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 1.9rem;
+  padding-bottom: .5rem;
+  font-size: 1rem;
+  &:first-child {
+    margin-bottom: 2.4rem;
+  }
+  &:focus {
+    outline: none;
+  }
+  &::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+  &:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+  &:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+  &:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+  &:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+}
+
+::-webkit-input-placeholder {
+  color: #28292d;
+  text-align: center;
+}
+
+::-moz-placeholder {
+  color: #28292d;
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  color: #28292d;
+  text-align: center;
+}
+
+:-moz-placeholder {
+  color: #28292d;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  border: none;
+  background-color: #28292d;
+  color: #fff;
+  padding: 1rem 0;
+  font-size: pxToRem(14px);
+  font-family: TinkovEB;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: opacity .5s linear;
+  box-shadow: 0 0 18px 9px #ccc;
+  margin-top: .4rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  &:hover {
+    opacity: .5;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-12 {
+    padding-top: 8.2rem;
+    padding-bottom: 8.8rem;
+    background-image: url("img/sec-12/bg-lines-md.png");
+    background-size: auto;
+  }
+
+  .sec-12__title {
+    font-size: pxToRem(48px);
+  }
+
+  .sec-12__subtitle {
+    font-size: pxToRem(24px);
+    padding: 0 3rem;
+  }
+
+  .form-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .sec-12__form {
+    padding: 4.4rem 8.3rem;
+  }
+}

@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.logo-container {
+  display: flex;
+}
+
 #sec-01 .rezart-logo {
   display: inline-block;
   text-decoration: none;
@@ -185,8 +189,147 @@
   padding: 0 4.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #sec-01 .row:last-child [class*= col-] {
     padding: 0;
+  }
+
+  #sec-01 .menu_link:last-child {
+    display: none;
+  }
+
+  .header-telephone {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-01 {
+    padding-top: 1.2rem;
+    padding-bottom: 15.1rem;
+    background-image: url("img/sec-01/bg-md.png");
+  }
+
+
+  #sec-01 .row:last-child [class*= col-]:first-child {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem .6rem 0 .6rem;
+
+  }
+
+  #sec-01 .rezart-logo {
+    margin-right: 1rem;
+  }
+
+  #sec-01 .logo {
+    width: pxToRem(40px);
+  }
+
+  .menu-container {
+    display: none;
+  }
+
+  .header-telephone {
+    position: relative;
+    font-family: TinkovEB;
+    font-size: pxToRem(16px);
+    color: #fff;
+    align-self: baseline;
+  }
+
+  .sec-01__title {
+    font-size: pxToRem(48px);
+    text-align: left;
+    margin-bottom: .8rem;
+  }
+
+  .sec-01__paragraph {
+    font-size: pxToRem(20px);
+    padding: 0 1rem 0 .5rem;
+    margin-bottom: 3.6rem;
+  }
+
+  #sec-01 .row:first-child {
+    margin-bottom: 15.2rem;
+  }
+
+  .sec-01__btn-container {
+    width: 21rem;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+  }
+
+  .sec-01__under-btn-p {
+    padding: 0 .5rem;
+  }
+
+  .sec-01__link {
+    &::before {
+      content: url("img/sec-01/border-btn-md.png");
+    }
+  }
+
+  .sec-01__bootom-p {
+    padding: 0;
+    margin: 17.2rem 0 0 5.7rem;
+  }
+
+  .sec-01__bg-color {
+    background-color: #222222;
+    padding: 0 .4rem;
+  }
+
+  #sec-01 .row:last-child [class*=col-]:last-child {
+    position: relative;
+  }
+
+  #sec-01 .menu_link {
+    position: absolute;
+    right: 8%;
+    bottom: -54%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-01 {
+    background-image: url("img/sec-01/bg-lg.png");
+  }
+
+  .header {
+    padding: .4rem 0 0 0;
+  }
+
+  .sec-01__title {
+    width: 66%;
+  }
+
+  .sec-01__paragraph {
+    padding: 0;
+    width: 61%;
+  }
+
+  .sec-01__btn-container {
+    margin-left: 0;
+  }
+
+  .sec-01__under-btn-p {
+    padding: 0;
+  }
+
+  .sec-01__bootom-p {
+    margin: 17.2rem 0 0 16.5rem;
+  }
+
+  #sec-01 .menu_link {
+    right: 1%;
   }
 }

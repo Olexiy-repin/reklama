@@ -11,15 +11,20 @@ $baseFontSize: 16px;
   box-sizing: border-box;
 }
 
+body {
+  counter-reset: number;
+}
+
 .container--width {
-  max-width: pxToRem(1158px);
+  max-width: pxToRem(1156px);
   min-width: pxToRem(320px);
 }
 
-.br {
-  display: block;
+@media (max-width: 767px) {
+  .br {
+    display: block;
+  }
 }
-
 
 @media (min-width: 768px) {
 

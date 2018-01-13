@@ -1,7 +1,7 @@
 #sec-08 {
   padding-top: 1.3rem;
   padding-bottom: 6rem;
-  background-image: url(img/sec-08/bg-lines.png);
+  background-image: url("img/sec-08/bg-lines.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -41,4 +41,74 @@
   font-size: pxToRem(20px);
   color: #b39c72;
   line-height: 2;
+}
+
+.sec-08__picture {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #sec-08 {
+    padding-top: 2.7rem;
+    background-image: url("img/sec-08/bg-lines-md.png");
+    background-size: auto;
+  }
+
+  .sec-08__title {
+    font-size: pxToRem(48px);
+    margin-bottom: .7rem;
+  }
+
+  .sec-08__paragraph {
+    font-size: pxToRem(24px);
+  }
+
+  .sec-08__list-item {
+    font-size: pxToRem(24px);
+    line-height: 1.9;
+  }
+
+  .sec-08__picture {
+    position: relative;
+    height: 359px;
+    img {
+      position: absolute;
+      top: -4.2%;
+      left: -108.2%;
+    }
+  }
+
+  .sec-08__list {
+    text-align: left;
+    padding-top: 5.8rem;
+    padding-left: 4.4rem;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #sec-08 {
+    padding-top: 4rem;
+    padding-bottom: 7.1rem;
+    background-image: url("img/sec-08/bg-lines-lg.png");
+  }
+
+  .sec-08__title {
+    text-align: left;
+    padding-right: 1rem;
+  }
+
+  .sec-08__paragraph {
+    text-align: left;
+  }
+
+  .sec-08__list {
+    padding-left: 6.4rem;
+  }
+
+  .sec-08__picture img {
+    top: -5.6%;
+    left: -105.5%;
+  }
 }

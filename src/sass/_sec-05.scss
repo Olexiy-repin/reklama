@@ -40,3 +40,32 @@
   letter-spacing: .1rem;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  #sec-05 {
+    padding-top: 6.8rem;
+    padding-bottom: 7.7rem;
+    background-image: url("img/sec-05/bg-lines-md.png");
+  }
+  .sec-05__title {
+    font-size: pxToRem(36px);
+    padding: 0 4rem;
+    margin-bottom: .8rem;
+  }
+
+  .sec-05__btn {
+    padding: 1rem 6.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #sec-05 {
+    padding-top: 7.4rem;
+    padding-bottom: 8.8rem;
+    background-image: url("img/sec-05/bg-lines-lg.png");
+  }
+
+  .sec-05__title {
+    padding: 0 16rem;
+  }
+}

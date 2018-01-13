@@ -1,0 +1,130 @@
+#sec-11 {
+  padding-top: 5.7rem;
+  padding-bottom: 6.3rem;
+  background-color: #f7f7f7;
+}
+
+#sec-11 .row [class*=col-]:first-child {
+  margin-bottom: 2.3rem;
+}
+
+.sec-11__title {
+  font-family: TinkovEB;
+  font-size: pxToRem(36px);
+  text-transform: uppercase;
+  color: #28292d;
+  margin-bottom: .1rem;
+}
+
+.sec-11__paragraph {
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+}
+
+.order-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.9rem;
+  padding-bottom: .3rem;
+  border-bottom: 3px solid #b39c72;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__text {
+  width: 50%;
+  font-family: TinkovEB;
+  font-size: pxToRem(20px);
+  color: #28292d;
+  padding-bottom: .5rem;
+  &::after {
+    display: inline-block;
+    content: url("img/sec-11/r-arrow.svg");
+    width: 18px;
+    height: 12px;
+    margin-left: .7rem;
+  }
+}
+
+.coast-block {
+  width: 36.6%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.order__coast {
+  font-family: TinkovEB;
+  font-size: pxToRem(48px);
+  color: #28292d;
+}
+
+@media (max-width: 767px) {
+  .sec-11__title-md {
+    display: none;
+  }
+
+  .paragraph-line {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #sec-11 {
+    padding-top: 7.8rem;
+    padding-bottom: 8.7rem;
+  }
+  .sec-11__title {
+    font-size: pxToRem(48px);
+    margin-bottom: 1.7rem;
+  }
+
+  .sec-11__paragraph {
+    font-size: pxToRem(24px);
+  }
+
+  .order__text {
+    font-size: pxToRem(24px);
+  }
+
+  .sec-11__paragraph-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .sec-11__content-container {
+    padding: 0 4.4rem;
+  }
+
+  .paragraph-line {
+    height: 2px;
+    background-color: #000;
+    width: 44.2%;
+    margin-right: 1.8rem;
+  }
+
+  .order-block {
+    padding: 0 8.6rem;
+  }
+
+  #sec-11 .row [class*=col-]:first-child {
+    margin-bottom: 3.5rem;
+  }
+
+  .order__text {
+    width: 60%;
+  }
+
+  .order-container {
+    margin-bottom: 1.3rem;
+    &:last-child {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .coast-block {
+    justify-content: flex-end;
+  }
+}

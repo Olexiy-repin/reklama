@@ -1,7 +1,7 @@
 #sec-03 {
   padding-top: 6rem;
   padding-bottom: 6.2rem;
-  background-image: url(img/sec-03/bg-lines.png);
+  background-image: url("img/sec-03/bg-lines.png");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,4 +52,77 @@
   font-family: TinkovEB;
   font-size: pxToRem(20px);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  #sec-03 {
+    padding-top: 5.5rem;
+    padding-bottom: 6.5rem;
+    background-image: url("img/sec-03/bg-lines-md.png");
+    background-size: auto;
+  }
+
+  .sec-03__title {
+    font-size: pxToRem(48px);
+  }
+
+  .percent-container {
+    display: flex;
+    width: 56%;
+    margin: auto;
+    padding-left: 2.3rem;
+  }
+
+  .percent-container__percent-content {
+    width: 38%;
+    margin-right: 4.9rem;
+    padding: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .percent-container__description {
+    font-size: pxToRem(24px);
+    text-align: left;
+  }
+
+  .percent-container .percent-container__percent-content:first-child .percent-container__description {
+    padding-left: 1.4rem;
+  }
+
+  #sec-03 .row [class*=col-]:first-child {
+    margin-bottom: 2.7rem;
+  }
+
+  .percent-container__percent-content {
+    background-image: url("img/sec-03/pattern-md.png");
+    &:last-child {
+
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  #sec-03 {
+    padding-bottom: 5.5rem;
+    background-image: url("img/sec-03/bg-lines-lg.png");
+  }
+
+  .sec-03__before-title-paragraph {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .sec-03__title {
+    text-align: left;
+    width: 83%;
+  }
+
+  .percent-container {
+    padding-left: 3.1rem;
+    padding-top: 2.1rem;
+    width: 78%;
+  }
 }
