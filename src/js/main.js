@@ -1,3 +1,6 @@
+const find = selector => document.querySelector(selector);
+const findAll = selector => document.querySelectorAll(selector);
+
 $( document ).ready(function() {
 
 $( ".cross" ).hide();
@@ -61,28 +64,39 @@ function show(n) {
   sp.innerHTML=counter;
 }
 
-// modal
-var modal = document.getElementById('myModal');
+/* modal windows */
+const Modal = (root) => {
+  const show = () => {
+    root.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  };
 
-var btn = document.getElementsByClassName("myBtn");
+  const hide = () => {
+    root.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  };
 
-var span = document.getElementsByClassName("close")[0];
+  const init = () => {
+    show(root);
 
-for(var i=0; i<btn.length; i++) {
-  btn[i].onclick = function() {
-    document.body.style.overflow = "hidden";
-    modal.style.display = "block";
-  }
-}
+    root.querySelector('.bottom-close')
+      .onclick = () => hide(root);
 
-span.onclick = function() {
-    document.body.style.overflow = "scroll";
-    modal.style.display = "none";
-}
+    window.onclick = ({ target }) => {
+      if (target === root) {
+        hide(root);
+      }
+    };
+  };
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        document.body.style.overflow = "scroll";
-        modal.style.display = "none";
-    }
-}
+  return { show, hide, init };
+};
+
+const modalTriggers = findAll('.modal-trigger');
+Array.from(modalTriggers).forEach((trigger) => {
+  trigger.addEventListener('click', ({ target }) => {
+    const element = find(target.dataset.modal);
+
+    Modal(element).init();
+  });
+});
