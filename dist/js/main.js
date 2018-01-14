@@ -60,3 +60,29 @@ function show(n) {
   x[counter-1].style.display = "block";
   sp.innerHTML=counter;
 }
+
+// modal
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementsByClassName("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+for(var i=0; i<btn.length; i++) {
+  btn[i].onclick = function() {
+    document.body.style.overflow = "hidden";
+    modal.style.display = "block";
+  }
+}
+
+span.onclick = function() {
+    document.body.style.overflow = "scroll";
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        document.body.style.overflow = "scroll";
+        modal.style.display = "none";
+    }
+}
