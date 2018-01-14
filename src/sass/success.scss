@@ -128,3 +128,171 @@ body {
     width: 28%;
   }
 }
+
+// MODAL
+#terms {
+  background-color: #121212;
+  padding: .7rem 0 .8rem 0;
+}
+
+.terms__item {
+  text-align: center;
+}
+
+.terms__link {
+  white-space: nowrap;
+  display: block;
+  text-align: center;
+  font-family: TinkovL;
+  font-size: 14px;
+  text-decoration: none;
+  color: #656668;
+  letter-spacing: .4px;
+  line-height: 1.4;
+  transition: color .5s linear;
+  margin-right: 0;
+  cursor: pointer;
+  &:hover {
+    color: rgb(179, 156, 114);
+  }
+}
+
+@media (min-width: 768px) {
+  #terms {
+    padding: .7rem 0;
+  }
+
+  .terms__container-item {
+    display: flex;
+    width: 84%;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    padding: .7rem;
+  }
+
+  .terms__link {
+    margin-right: 6%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #terms {
+    padding: .6rem 0;
+  }
+
+  .terms__container-item {
+    width: 54%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+  perspective: 3000px;
+}
+
+@keyframes modal-appear {
+  from {
+    transform: translate(-50%, -50%) rotateY(90deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotateY(0deg);
+  }
+}
+
+.bottom-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-height: 80%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  animation-name: modal-appear;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-duration: 180ms;
+  transform-origin: center center;
+  border-radius: 3px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-close {
+  color: #000;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  right: 25px;
+  position: absolute;
+  top: 10px;
+  z-index: 1;
+}
+
+.bottom-close:hover,
+.bottom-close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.titlebox {
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  padding: 0 25px;
+}
+
+.bottom-modal-content .tc {
+  font-family: TinkovEB;
+  font-size: pxToRem(24px);
+  text-transform: uppercase;
+  color: rgb(40, 41, 45);
+  letter-spacing: .1rem;
+  padding-top: pxToRem(50px);
+}
+
+.md_content {
+  font-family: TinkovL;
+  padding: 0 40px;
+  overflow: auto;
+  height: 80%;
+  width: 100%;
+}
+
+.md_content p {
+  line-height: 1.4;
+  padding: 10px 0;
+  font-size: .9rem;
+  color: rgb(102, 104, 105);
+}
+
+.md_content::-webkit-scrollbar {
+  width: 9px;
+  background: linear-gradient(to bottom, #ffffff 0%,#ccc 51%,#ffffff 100%);
+}
+
+.md_content::-webkit-scrollbar-thumb {
+  background: rgb(173, 151, 113);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
+}
