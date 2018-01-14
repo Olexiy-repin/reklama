@@ -132,3 +132,59 @@
     padding: 4.4rem 8.3rem;
   }
 }
+
+@media (min-width: 1200px) {
+  #sec-12 {
+    background-image: url("img/sec-12/bg-lines-lg.png"), url("img/sec-12/quation.png");
+    background-position: top, 54.6% 42%;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  #sec-12 .row .col-xl-6:last-child {
+    order: -1;
+  }
+
+  .form-container {
+    margin: .6rem 0 0 6.2rem;
+    width: 82%;
+  }
+
+  .sec-12__form {
+    padding: 4.4rem 4.1rem;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #28292d;
+    text-align: left;
+  }
+
+  ::-moz-placeholder {
+    color: #28292d;
+    text-align: left;
+  }
+
+  :-ms-input-placeholder {
+    color: #28292d;
+    text-align: left;
+  }
+
+  :-moz-placeholder {
+    color: #28292d;
+    text-align: left;
+  }
+
+  .sec-12__title {
+    text-align: left;
+    margin-top: 2.4rem;
+    margin-bottom: .7rem;
+    padding-left: 6.4rem;
+  }
+
+  .sec-12__subtitle {
+    text-align: left;
+    padding-left: 6.5rem;
+    width: 86%;
+  }
+
+}

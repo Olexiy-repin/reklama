@@ -128,3 +128,30 @@
     justify-content: flex-end;
   }
 }
+
+@media (min-width: 1200px) {
+  #sec-11 {
+    padding-top: 10.1rem;
+    padding-bottom: 6.7rem;
+    background-image: url("img/sec-11/bg.png");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  .paragraph-line {
+    width: 41%;
+  }
+
+  .sec-11__content-container {
+    padding: 0;
+  }
+
+  .order__text {
+    width: 63%;
+  }
+
+  .order-block {
+    padding: .4rem 0 0 .3rem;
+  }
+}
