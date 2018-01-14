@@ -171,6 +171,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover {
+    transition: opacity .3s linear;
+    opacity: .5;
+  }
 }
 
 .sec-01__under-btn-p {
@@ -178,6 +183,7 @@
   font-size: pxToRem(14px);
   color: #7a7a7a;
   padding: 0 2rem;
+
 }
 
 .sec-01__bootom-p {

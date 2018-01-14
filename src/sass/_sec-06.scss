@@ -148,6 +148,11 @@
   border: none;
   background-color: #28292d;
   cursor: pointer;
+  &:hover {
+    transition: all .3s;
+    background-color: rgb(28, 84, 233);
+    box-shadow: 0 0 33.6px 1.4px rgba(28, 84, 233, 0.8);
+  }
 }
 
 @media (max-width: 767px) {
