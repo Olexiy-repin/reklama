@@ -1,68 +1,68 @@
 const find = selector => document.querySelector(selector);
 const findAll = selector => document.querySelectorAll(selector);
 
-$( document ).ready(function() {
-
-$( ".cross" ).hide();
-$( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
-});
-});
-
-$( ".cross" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
-});
-});
+/* hamburger */
+$('.cross').hide();
+$('.menu').hide();
+$('.hamburger').click(() => {
+  $('.menu').slideToggle('slow', () => {
+    $('.hamburger').hide();
+    $('.cross').show();
+  });
 });
 
-// slider
-var slideIndex = 1;
-showDivs(slideIndex);
+$('.cross').click(() => {
+  $('.menu').slideToggle('slow', () => {
+    $('.cross').hide();
+    $('.hamburger').show();
+  });
+});
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+/* slider */
+function Slider(args) {
+  let slideIndex = 1;
+  const { slidesSelector, counterSelector } = args;
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var sp = document.getElementById("cnt");
+  this.render = () => {
+    const slides = findAll(slidesSelector);
+    const counter = find(counterSelector);
 
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-  sp.innerHTML=slideIndex;
-}
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
 
-// bottom slider
-var counter = 1;
-show(counter);
+    if (slideIndex < 1) {
+      slideIndex = slides.length;
+    }
 
-function plus(n) {
-  show(counter += n);
-}
+    Array.from(slides).forEach((slide) => {
+      slide.style.display = 'none';
+    });
 
-function show(n) {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  var sp = document.getElementById("ct");
+    slides[slideIndex - 1].style.display = 'block';
 
-  if (n > x.length) {counter = 1}
-  if (n < 1) {counter = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  x[counter-1].style.display = "block";
-  sp.innerHTML=counter;
-}
+    if (counter) {
+      counter.innerHTML = slideIndex;
+    }
+  };
+
+  this.switch = (offset) => {
+    this.render(slideIndex += offset);
+  };
+};
+
+const topSlider = new Slider({
+  slidesSelector: '.mySlides',
+  counterSelector: '#mySlides-counter',
+});
+topSlider.render();
+
+const bottomSlider = new Slider({
+  slidesSelector: '.slides',
+  counterSelector: '#slides-counter',
+});
+bottomSlider.render();
+
 
 /* modal windows */
 const Modal = (root) => {
