@@ -8,6 +8,7 @@ var mmq = require('gulp-merge-media-queries');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var del = require('del');
+var uglify = require('gulp-uglify-es').default;
 
 // TASK FOR HTML
 gulp.task('html', function(){
@@ -56,11 +57,22 @@ gulp.task('css', function(){
 // TASK FOR JS
 gulp.task('js', function(){
   return gulp.src('./src/js/*.js')
+  .pipe(uglify())
   .pipe(gulp.dest('./dist/js/'))
     .pipe(browserSync.reload({
       stream: true
     }));
 });
+
+// gulp.task('compress-js', function (cb) {
+//   pump([
+//         gulp.src('./src/js/*.js'),
+//         uglify(),
+//         gulp.dest('./dist/js/')
+//     ],
+//     cb
+//   );
+// });
 
 // TASK FOR FOLDER COMPONENTS
 gulp.task('components', function(){
