@@ -310,6 +310,11 @@
 }
 
 @media (min-width: 1200px) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #sec-01 {
+      background-image: url("img/sec-01/bg-lg@2x.png");
+    }
+}
   #sec-01 {
     background-image: url("img/sec-01/bg-lg.png");
   }
@@ -336,7 +341,7 @@
   }
 
   .sec-01__bootom-p {
-    margin: 17.2rem 0 0 16.5rem;
+    margin: 17.2rem 0 0 15.2rem;
   }
 
   #sec-01 .menu_link {

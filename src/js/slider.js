@@ -52,4 +52,16 @@
     counterSelector: '#slides-counter',
   });
   bottomSlider.init();
+
+$(".mySlides").swipe( {
+    swipeLeft:leftSwipe,
+    swipeRight:rightSwipe,
+    threshold:0
+});
+function leftSwipe(event){
+    alert('swipe left');
+}
+function rightSwipe(event){
+    alert('swipe right');
+}
 })();
