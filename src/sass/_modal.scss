@@ -108,7 +108,7 @@
   transform: translate(-50%, -50%);
   background-color: #fefefe;
   margin: auto;
-  width: 80%;
+  width: 90%;
   text-align: center;
   animation-name: modal-appear;
   animation-timing-function: linear;
@@ -179,4 +179,10 @@
 .md_content::-webkit-scrollbar-thumb {
   background: rgb(173, 151, 113);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, .5);
+}
+
+@media (max-width: 768px) {
+  .bottom-modal-content .tc {
+    font-size: pxToRem(18px);
+  }
 }

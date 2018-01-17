@@ -33,6 +33,11 @@
   font-family: TinkovL;
   font-size: pxToRem(14px);
   color: #fff;
+  text-decoration: none;
+  &:hover {
+    transition: all .5s linear;
+    opacity: .5;
+  }
   &::before {
     display: inline-block;
     content: url("img/footer/geo.svg");
@@ -43,6 +48,7 @@
 
 .footer__tf {
   display: flex;
+  text-decoration: none;
   justify-content: center;
   font-family: TinkovEB;
   color: #fff;
