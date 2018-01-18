@@ -233,7 +233,10 @@
   #sec-01 {
     padding-top: 1.2rem;
     padding-bottom: 15.1rem;
-    background-image: url("img/sec-01/bg-md.png");
+    background-image: url("img/sec-01/bg-lines-md.png"), url("img/sec-01/bg-md-01.png");
+    background-size: auto, cover;
+    background-position: top, top;
+    background-repeat: no-repeat, no-repeat;
   }
 
 
